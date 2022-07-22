@@ -1,0 +1,110 @@
+*{
+    color: white;
+    font-family: "Lexend Deca",sans-serif;
+    font-weight: 400;
+}
+.page{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-color: hsl(233, 47%, 7%);
+}
+
+.card{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+    width: 60%;
+    position: relative;
+    /* align-items: center; */
+    align-content: center;
+    top: 20vh;
+    left: 20%;
+    height: 45vh;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px;
+}
+.image{
+    /* height: 35vh; */
+    /* object-fit: cover; */
+    background: linear-gradient(rgba(170, 92, 219,0.5),rgba(170, 92, 219,0.5)),url("./image-header-desktop.jpg") no-repeat ;
+    background-size: 100% 100%;
+}
+.image{
+    border-radius: 0 10px 10px 0;
+}
+.description{
+    display: flex;
+    font-size: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: stretch;
+    margin: 5%;
+}
+h1{
+    color: hsl(0, 0%, 100%);
+    font-family: "Inter",sans-serif;
+    font-weight: 700;
+}
+.description1{
+    font-size: 120%;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.outerpartner{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+}
+#highlight{
+    font-weight: 700;
+    color: hsl(277, 64%, 61%);
+}
+.partner{
+    display: flex;
+    justify-content: space-around;
+}
+.subheading{
+    display: flex;
+    justify-content: space-around;
+}
+.companies{
+    font-size: 200%;
+    font-weight: 700;
+}
+.templates{
+    font-size: 200%;
+    font-weight: 700;
+}
+.queries{
+    font-size: 200%;
+    font-weight: 700;
+}
+.companies1{
+    font-size: 100%;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: "Lexend Deca",sans-serif;
+}
+.templates1{
+    font-size: 100%;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: "Lexend Deca",sans-serif;
+}
+
+.queries1{
+    font-size: 100%;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: "Lexend Deca",sans-serif;
+}
+
+@media screen and (max-width:900px) {
+    .card{
+        grid-template-columns: auto;
+        grid-template-rows: 30% 70%;
+        height: 65vh;
+        overflow: auto;
+    }
+    .image{
+        order: -1;
+    }
+}
